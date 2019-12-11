@@ -3,6 +3,7 @@ GEM
   specs:
     dogapi (1.37.1)
       multi_json
+    jsonl (0.1.5)
     multi_json (1.14.1)
 
 PLATFORMS
@@ -10,6 +11,7 @@ PLATFORMS
 
 DEPENDENCIES
   dogapi
+  jsonl
 
 BUNDLED WITH
    2.0.1
