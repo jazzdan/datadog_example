@@ -11,13 +11,12 @@ $dog = Dogapi::Client.new(api_key)
 $i = 0
 
 def send_metrics(points)
-  $dog.emit_points('tilt.updates', points, :tags => {user: 'dmiller'}, :type => 'gauge')
+  $dog.emit_points('tilt.updates', points, :tags => {user: 'hyu'})
 end
 
 def adjust_timestamp(time)
   $i = $i + 1
   new_t = Time.now - $i * 60
-  puts new_t
   new_t
 end
 
